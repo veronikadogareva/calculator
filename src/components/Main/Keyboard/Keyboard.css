@@ -1,0 +1,40 @@
+.keyboard {
+  margin: 0 19px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 18px 11px;
+}
+
+.keyboard__button {
+  border: none;
+  padding: 0;
+  border-radius: 16%;
+  width: 80px;
+  height: 80px;
+  font-size: 36px;
+  color: #707070;
+  box-shadow: 0 1 2 #0000;
+}
+
+.keyboard__button:first-child {
+  visibility: hidden
+}
+
+.keyboard__button_type_clear {
+  background-image: url('../../../images/Group_clear.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.keyboard__button_type_equal {
+  height: 178px;
+  grid-row: span 2;
+  background-color: #56CB95;
+  color: white;
+}
+
+.keyboard__button_type_zero {
+  width: 169px;
+  grid-column: span 2;
+}

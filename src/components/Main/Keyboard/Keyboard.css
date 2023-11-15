@@ -9,14 +9,22 @@
 .keyboard__button {
   border: none;
   padding: 0;
-  border-radius: 16%;
+  border-radius: 12px;
   width: 80px;
   height: 80px;
   font-size: 36px;
   color: #707070;
   box-shadow: 0 1 2 #0000;
+  cursor: pointer;
 }
 
+.keyboard__button:hover {
+ 
+  box-shadow: inset 0px 5px 10px 1px rgba(0, 0, 0, 0.25);
+}
+.keyboard__button:active{
+  transform: translateY(5px);
+}
 .keyboard__button:first-child {
   visibility: hidden
 }
